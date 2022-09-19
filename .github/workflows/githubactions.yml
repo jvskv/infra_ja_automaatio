@@ -26,10 +26,10 @@ jobs:
           pytest
       - name: Run coverage
         run: |
-          -m coverage run
+          python -m coverage run
       - name: Create coverage report
         run: |
-          -m coverage report
+          python -m coverage report
       - name: Generate coverage report
         run: |
           coverage report test_postinumerot.py test_postitoimipaikka.py
